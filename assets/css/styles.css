@@ -212,9 +212,7 @@ header>nav.bottom-header>ul>li.first {
 
 header>nav.bottom-header>ul>li.first i {
     color: var(--caret);
-    background: var(--white);
-    border-radius: 100%;
-    padding: 14px;
+    padding-right: 14px;
 }
 
 header>nav.bottom-header>ul>li.first div {
@@ -409,7 +407,134 @@ section.product-section {
 /* Footer styles */
 footer {
     width: 100%;
-    padding: 40px 60px 70px 60px;
+    padding: 70px 150px 130px 150px;
     background:var(--black);
     margin-top: 40px;
+    color: var(--white);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer > section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+footer > section h1 {
+    font-size: 22px;
+}
+
+footer > section li {
+    font-size: 16px;
+    font-weight: normal;
+    list-style: none;
+}
+
+footer > section li i {
+    padding-right: 15px;
+    margin-bottom: 15px;
+}
+
+#socials {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#socials i {
+    background: var(--white);
+    color: var(--black);
+    width: auto;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+footer > section li a { 
+    text-decoration: none;
+    color: #FFF;
+}
+
+footer img {
+    width: 120px;
+    height: 120px;
+    background: var(--white);
+}
+
+#footnote {
+    padding: 10px 150px 30px;
+    text-align: center;
+}
+
+/* Contact us page */
+#top-contact {
+    background: var(--caret);
+    padding: 120px 0px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: var(--white);
+}
+
+#top-contact h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+#top-contact span {
+    font-size: 16px;
+}
+
+#top-section-main-content {
+    padding: 40px 0px;
+    width: 70%;
+    margin: auto;
+}
+
+#top-section-main-content span{
+    font-size: 24px;
+}
+
+#top-section-main-content p{
+    margin-top: 70px;
+ }
+
+ section#contact-main-body{
+    width: 80%;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+ }
+
+ section#contact-main-body div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ }
+
+ #contact-main-body h1 {
+    color: var(--caret);
+    font-size: 28px;
+    font-weight: bold;
+ }
+
+ #contact-main-body span div{
+    background: red;
+    padding: 20px;
+    max-width: 240px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0.7;
+}
+
+#contact-main-body span a {
+    text-decoration: none;
+    color: #FFF !important;
 }
