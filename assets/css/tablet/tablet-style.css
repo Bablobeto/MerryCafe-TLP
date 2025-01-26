@@ -1,3 +1,156 @@
-@media (min-width: 768px) and (max-width: 1024px) {
-    
+/* 425 - 768 */
+@media (min-width: 425px) and (max-width: 1024px) {
+
+    /* Sub header styles */
+    header>nav.bottom-header {
+        width: 100%;
+        height: auto;
+        padding: 10px 30px 10px 20px !important;
+        background: var(--caret);
+        align-content: center;
+    }
+
+    header>nav.bottom-header>ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+    /* Sub heading nav - Center */
+    header>nav.bottom-header>ul>li.center {
+        flex: 1;
+        order: 1;
+    }
+
+    header>nav.bottom-header>ul>li {
+        list-style-type: none;
+        color: var(--black);
+    }
+
+    header>nav.bottom-header>ul>li.center {
+        width: 100%;
+    }
+
+    header>nav.bottom-header>ul>li.center>nav>ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        margin: 0;
+        gap: 20px;
+        min-height: var(--sub-heading-height);
+    }
+
+    header>nav.bottom-header>ul>li.center>nav>ul>li {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        color: var(--white);
+        height: var(--sub-heading-height);
+        padding: 0px 20px;
+
+    }
+
+    header>nav.bottom-header>ul>li.center>nav>ul>li:hover {
+        background: var(--white);
+    }
+
+    header>nav.bottom-header>ul>li.center>nav>ul>li:hover span {
+        color: var(--caret);
+    }
+
+    header>nav.bottom-header>ul>li.center>nav>ul>li:first-child .menu-icon-svg,
+    header>nav.bottom-header>ul>li.center>nav>ul>li:last-child .deals-icon-svg {
+        width: var(--icon-size);
+    }
+
+    header>nav.bottom-header>ul>li.center>nav>ul>li:first-child .menu-icon-svg,
+    header>nav.bottom-header>ul>li.center>nav>ul>li:last-child .deals-icon-svg,
+    header>nav.bottom-header>ul>li.center>nav>ul>li:first-child span,
+    header>nav.bottom-header>ul>li.center>nav>ul>li:last-child span {
+        fill: var(--white);
+        /* for svg */
+        color: var(--white)
+            /* for span text */
+        ;
+        display: inline-flex;
+        opacity: 1;
+        transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    header>nav.bottom-header>ul>li>nav>ul>li:first-child:hover .menu-icon-svg,
+    header>nav.bottom-header>ul>li>nav>ul>li:last-child:hover .deals-icon-svg {
+        opacity: 1;
+        transform: translateX(48px);
+        fill: var(--caret);
+    }
+
+    header>nav.bottom-header>ul>li>nav>ul>li:first-child:hover span,
+    header>nav.bottom-header>ul>li>nav>ul>li:last-child:hover span {
+        opacity: 1;
+        transform: translateX(-36px);
+        color: var(--caret);
+    }
+
+    /* Sub heading nav - First */
+    header>nav.bottom-header>ul>li.first {
+        order: 2;
+        flex: 2;
+        flex-direction: row;
+        display: flex;
+        gap: 10px;
+        height: var(--sub-heading-height);
+    }
+
+    header>nav.bottom-header>ul>li.first i {
+        color: var(--caret);
+        background: var(--white);
+        border-radius: 100%;
+        padding: 14px;
+    }
+
+    header>nav.bottom-header>ul>li.first div {
+        color: var(--caret);
+        background: var(--white);
+        border-radius: 10px;
+        padding: 14px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    /* Sub heading nav - Last */
+    header>nav.bottom-header>ul>li.last {
+        flex: 2;
+        order: 3;
+        flex-direction: row;
+        display: flex;
+        gap: 10px;
+        height: var(--sub-heading-height);
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    header>nav.bottom-header>ul>li div.circle {
+        color: var(--caret);
+        background: var(--white);
+        border-radius: 100%;
+        padding: 10px;
+    }
+
+    header>nav.bottom-header>ul>li div.circle i,
+    header>nav.bottom-header>ul>li div.circle sup {
+        color: var(--caret);
+    }
+
+    header>nav.bottom-header>ul>li.last div {
+        color: var(--white);
+    }
 }
