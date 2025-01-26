@@ -1,11 +1,11 @@
 /* Mobile styles */
-@import url('mobile/mobile-style.css');
+/* @import url('mobile/mobile-style.css'); */
 
 /* Tablet styles */
 @import url('tablet/tablet-style.css');
 
 /* Desktop styles */
-@import url('desktop/desktop-style.css');
+/* @import url('desktop/desktop-style.css'); */
 
 /* Base styles (applies to all devices unless overridden) */
 :root {
@@ -104,7 +104,7 @@ header>nav>ul>li:last-child:hover .top-header-icon-svg-register {
 /* Sub header styles */
 header>nav.bottom-header {
     width: 100%;
-    height: var(--sub-heading-height);
+    height: auto;
     padding: 0px 200px;
     background: var(--caret);
     align-content: center;
@@ -116,6 +116,7 @@ header>nav.bottom-header>ul {
     flex-direction: row;
     justify-content: space-evenly;
     align-content: center;
+    flex-wrap: nowrap;
 }
 
 header>nav.bottom-header>ul>li.last {
@@ -221,6 +222,9 @@ header>nav.bottom-header>ul>li.first div {
     background: var(--white);
     border-radius: 10px;
     padding: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 /* Sub heading nav - Last */
