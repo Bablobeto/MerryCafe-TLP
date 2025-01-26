@@ -105,9 +105,7 @@
 
     header>nav.bottom-header>ul>li.first i {
         color: var(--caret);
-        background: var(--white);
-        border-radius: 100%;
-        padding: 14px;
+        padding-right: 14px;
     }
 
     header>nav.bottom-header>ul>li.first div {
@@ -156,4 +154,14 @@
     section.product-section > div.main-content article {
         width: 270px !important;
     }
+
+    footer {
+        padding: 80px 120px !important;
+        justify-content: left !important;
+    }
+
+    footer > section:first-child {
+        flex: 6 !important;
+    }
+
 }
