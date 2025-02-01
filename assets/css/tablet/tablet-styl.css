@@ -1,0 +1,12 @@
+/* 426 - 1024 */
+@media (min-width: 426px) and (max-width: 1024px) {
+    footer {
+        padding: 80px 120px !important;
+        justify-content: left !important;
+    }
+
+    footer > section:first-child {
+        flex: 6 !important;
+    }
+
+}
